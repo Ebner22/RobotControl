@@ -14,8 +14,18 @@ class DriveToReturn(State):
         # always begin with no transition
         self.transitionReady = False
 
-        # reverse and spin
-        # L or R depending on side of beacon
+        #store initial beacon angle
+        #rotate until beacon angle=initialBeaconAngle+180
+
+        #go forward until:
+            #the "distance" between the middle and back beacon=the distance between the middle and front beacon
+        #rotate until beacon is directly behind robot
+        #back up until distance between camera and beacon is small enough
+
+
+        
+        # check if beacon is on left or right side within bounds
+        #
         # cannot see side beacon
         # main beacon must be specified size.
         # needs to be procedure to "parallel park" and try again if criteria not met
